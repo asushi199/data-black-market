@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: ranked handout. A three-row price-list (rank | reason | difficulty-to-replace), then a combined-risk strip and a protection list. */
+/* Layout: ranked handout. A three-row price-list (rank | reason | difficulty-to-replace), then a combined-risk strip. */
 :root {
   --bg: #eef1f5;
   --surface: #ffffff;
@@ -49,7 +49,7 @@ h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(34px, 7vw
 .gauge .note { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.35; }
 
 .combo { border-top: 3px solid var(--ink); padding-top: 22px; margin-bottom: 40px; }
-.combo h2, .protect h2 { font-family: var(--f-display); font-weight: 700; font-size: 26px; margin: 0 0 14px; }
+.combo h2 { font-family: var(--f-display); font-weight: 700; font-size: 26px; margin: 0 0 14px; }
 .sum { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0 0 16px; }
 .sum span { font-family: var(--f-display); font-weight: 700; font-size: 17px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 8px 14px; }
 .sum b { font-family: var(--f-mono); font-size: 22px; color: var(--muted); font-weight: 500; }
@@ -58,9 +58,6 @@ h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(34px, 7vw
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sum .result { color: #1a0d0c; } }
 .rumusan { font-size: 20px; font-weight: 600; max-width: 52ch; margin: 0; }
 
-.protect ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
-.protect li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 18px; }
-.protect strong { font-family: var(--f-display); font-weight: 700; }
 .foot { margin-top: 36px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
 
 @media (max-width: 640px) {
@@ -124,16 +121,6 @@ h1 { font-family: var(--f-display); font-weight: 800; font-size: clamp(34px, 7vw
       <span>MyKad</span><b>+</b><span>Telefon</span><b>+</b><span>Majikan &amp; gaji</span><b>=</b><span class="result">Skrip penipuan yang meyakinkan</span>
     </p>
     <p class="rumusan">Semakin sukar sesuatu maklumat ditukar, semakin tinggi nilainya.</p>
-  </section>
-
-  <section class="protect">
-    <h2>Cara melindungi diri</h2>
-    <ul>
-      <li><strong>Jangan kongsi nombor MyKad</strong> dalam borang atau pautan yang tidak dipercayai.</li>
-      <li><strong>Aktifkan pengesahan dua faktor (2FA)</strong> pada WhatsApp, Telegram dan Google.</li>
-      <li><strong>Elakkan memaparkan majikan dan gaji</strong> di media sosial.</li>
-      <li><strong>Disyaki ditipu?</strong> Hubungi Pusat Respons Scam Kebangsaan (NSRC) di <strong>997</strong>.</li>
-    </ul>
   </section>
 
   <p class="foot">Susunan dan penilaian "sukar ditukar" bersifat ilustrasi untuk tujuan latihan. Bahan aktiviti: seminar keselamatan siber, 19 Oktober 2026.</p>
